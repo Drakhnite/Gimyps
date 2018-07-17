@@ -20,7 +20,7 @@ public class MainController {
 	@FXML
 	private PasswordField txtPassword;
 	
-	public void Seconnecter(ActionEvent event) throws Exception {
+	public void Connexion(ActionEvent event) throws Exception {
 		if(txtUserName.getText().equals("user") && txtPassword.getText().equals("password")) {
 			txtConnexion.setText("Connexion réussie");
 			Stage primarystage = new Stage();
