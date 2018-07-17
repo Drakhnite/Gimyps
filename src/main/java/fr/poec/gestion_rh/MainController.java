@@ -22,7 +22,7 @@ public class MainController {
 	
 	public void Login(ActionEvent event) throws Exception {
 		if(txtUserName.getText().equals("user") && txtPassword.getText().equals("password")) {
-			
+			txtConnexion.setText("Connexion réussie");
 			Stage primarystage = new Stage();
 			Parent root = FXMLLoader.load(getClass().getResource("/gestion_rh/proto_projet_page_accueil.fxml"));
 			Scene scene = new Scene(root,400,400);
