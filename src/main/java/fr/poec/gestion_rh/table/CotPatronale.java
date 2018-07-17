@@ -4,7 +4,6 @@ import java.util.Date;
 
 public class CotPatronale {
 
-	/** The id, thanks obsious captain. */
 	private int id;
 	private Date dateDebut;
 	private Date dateFin;
