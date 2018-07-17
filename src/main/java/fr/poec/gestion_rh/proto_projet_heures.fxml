@@ -21,7 +21,7 @@
                   <Font name="Arial Black" size="12.0" />
                </font>
             </Text>
-            <MenuButton layoutX="14.0" layoutY="9.0" mnemonicParsing="false" text="Menu">
+            <MenuButton id="menu" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" text="Menu">
                <items>
                   <MenuItem mnemonicParsing="false" text="Gestion du personnel" />
                   <MenuItem mnemonicParsing="false" text="Editer les heures de travail" />

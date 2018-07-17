@@ -12,14 +12,32 @@ import fr.poec.gestion_rh.table.Table;
 
 public class ListTable {
 
-	String[] listTable;
-	String name = "";
-	int length = 0;
-	int i;
-	List<Table> list = new ArrayList<Table>();
+	private String[] listTable;
+	private int i;
+	private String name;
+	private List<Table> list = new ArrayList<Table>();
 
-	public void getListTable() {
+	public void getListColumn() {
 
+		setListTable();
+
+		try (Connection conn = ConnectionToBdd.createConnection(); Statement statement = conn.createStatement()) {
+			ResultSet rs1 = statement.executeQuery("SELECT * FROM " + listTable[i]);
+			ResultSetMetaData resultMeta = rs1.getMetaData();
+
+			for (i = 0; i < resultMeta.getColumnCount(); i++) {
+				String column = resultMeta.getColumnName(i).toUpperCase();
+				Table.getColumn().add(new String(column));
+			}
+			rs1.close();
+		} catch (SQLException e)
+
+		{
+			e.printStackTrace();
+		}
+	}
+
+	public void setListTable() {
 		try (Connection conn = ConnectionToBdd.createConnection(); Statement statement = conn.createStatement()) {
 			ResultSet rs = statement.executeQuery("SHOW TABLES");
 
@@ -36,20 +54,14 @@ public class ListTable {
 		{
 			e.printStackTrace();
 		}
+	}
+	
+	public String getListTable(String name) {
+		for (i = 0; i<listTable.length; i++) {
 
-		try (Connection conn = ConnectionToBdd.createConnection(); Statement statement = conn.createStatement()) {
-			ResultSet rs1 = statement.executeQuery("SELECT * FROM " + listTable[i]);
-			ResultSetMetaData resultMeta = rs1.getMetaData();
-
-			for (i = 0; i < resultMeta.getColumnCount(); i++) {
-				String column = resultMeta.getColumnName(i).toUpperCase();
-				Table.getColumn().add(new String(column));
+			if (name.equals(listTable[i])) {
+				name = listTable[i];
 			}
-			rs1.close();
-		} catch (SQLException e)
-
-		{
-			e.printStackTrace();
-		}
+		}return name;
 	}
 }
