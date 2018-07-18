@@ -31,7 +31,7 @@ public class bulletinXls {
 		}
 		return data;
 	}
-	FileOutputStream fileOut = new FileOutputStream("temp.xls");
-	workbook.write();
-	workbook.close();
+//	FileOutputStream fileOut = new FileOutputStream("temp.xls");
+//	workbook.write();
+//	workbook.close();
 }

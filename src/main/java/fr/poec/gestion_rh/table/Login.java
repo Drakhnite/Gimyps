@@ -5,7 +5,7 @@ public class Login {
 	private int id;
 	private int idEmployee;
 	private String role;
-	private String user;
+	private static String user;
 	private String password;
 //	private String[] column = new String[] {"id_employee","role","login","MdP"};	
 //
@@ -41,7 +41,7 @@ public class Login {
 		this.role = role;
 	}
 
-	public String getUser() {
+	public static String getUser() {
 		return user;
 	}
 

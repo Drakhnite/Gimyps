@@ -25,14 +25,14 @@ public class Main extends Application {
 	}
 
 	public static void main(String[] args) throws IOException {
-		
+
 		Controler_Login loginC = new Controler_Login();
-		
+
 		System.out.println("coucou");
 		for (Login login : loginC.getDataFromTable()) {
-			System.out.println(login.getUser());
+			System.out.println(Login.getUser());
+
 		}
-		
 		launch(args);
 	}
 }
