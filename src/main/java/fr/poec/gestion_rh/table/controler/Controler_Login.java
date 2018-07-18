@@ -4,6 +4,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
@@ -12,13 +13,13 @@ import fr.poec.gestion_rh.bdd.ConnectionToBdd;
 import fr.poec.gestion_rh.table.Login;
 
 public class Controler_Login {
-
+	Scanner sc = new Scanner(System.in);
 	private List<Object> list = new ArrayList<Object>();
 
 	public void createTable() {
 
 		try (Connection conn = ConnectionToBdd.createConnection(); Statement statement = conn.createStatement()) {
-			statement.executeUpdate("CREATE TABLE Login (id integer auto_increment primary key,)");
+			statement.executeUpdate("CREATE TABLE Login (id integer auto_increment primary key)");
 			statement.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -30,12 +31,7 @@ public class Controler_Login {
 		try (Connection conn = ConnectionToBdd.createConnection()) {
 			try (Statement statement = conn.createStatement()) {
 				ResultSet rs = statement.executeQuery("SELECT * FROM Login");
-				// ResultSetMetaData resultMeta = rs.getMetaData();
-				//
-				// for (int i = 0; i < resultMeta.getColumnCount(); i++) {
-				// String column = resultMeta.getColumnName(i).toUpperCase();
-				// list.add(new String(column));
-				// }
+
 				while (rs.next()) {
 					Login login = new Login();
 					login.setId(rs.getInt("id"));
@@ -59,5 +55,48 @@ public class Controler_Login {
 		}
 
 		return logins;
+	}
+
+	public void insertIntoTable() {
+
+		String id_employe, mdp, role, login;
+		String concat1 = ""; 						// Todo references.
+		String concat2= "";							//
+		System.out.println("Id_employe = "); 	//
+		id_employe = sc.nextLine(); 			//
+		System.out.println("mdp = "); 			//
+		mdp = sc.nextLine(); 					//
+		System.out.println("role = "); 			//
+		role = sc.nextLine(); 					//
+		System.out.println("login = "); 		//
+		login = sc.nextLine(); 					//
+		
+		concat1 = id_employe.equals("") ? concat1 : concat1 + id_employe;
+		concat1 = mdp.equals("") ? concat1 : concat1 + mdp;
+		concat1 = role.equals("") ? concat1 : concat1 + role;
+		concat1 = login.equals("") ? concat1 : concat1 + login;
+		
+		concat2 = id_employe.equals("") ? concat2 : concat2 + "id_employe";
+		concat2 = mdp.equals("") ? concat2 : concat2 + "mdp";
+		concat2 = role.equals("") ? concat2 : concat2 + "role";
+		concat2 = login.equals("") ? concat2 : concat2 + "login";
+		
+		try (Connection conn = ConnectionToBdd.createConnection()) {
+			try (Statement statement = conn.createStatement()) {
+				ResultSet rs = statement.executeQuery("INSERT INTO Login ("+ concat1 +") VALUES (" + concat2 + ")"); // Todo
+
+				rs.close();
+			} catch (SQLException e)
+
+			{
+				e.printStackTrace();
+			}
+
+		} catch (SQLException e)
+
+		{
+			e.printStackTrace();
+		}
+		return;
 	}
 }

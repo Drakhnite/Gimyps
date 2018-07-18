@@ -1,4 +1,4 @@
-package fr.poec.gestion_rh.table;
+package fr.poec.gestion_rh.table.controler;
 
 public class Controler_PeriodeTravaillee {
 

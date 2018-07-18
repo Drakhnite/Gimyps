@@ -46,7 +46,7 @@ public class Login {
 	}
 
 	public void setUser(String user) {
-		this.user = user;
+		Login.user = user;
 	}
 
 	public String getPassword() {
