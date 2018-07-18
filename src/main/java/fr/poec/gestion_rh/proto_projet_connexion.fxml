@@ -12,7 +12,7 @@
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="120.0" layoutX="186.0" layoutY="138.0" stroke="BLACK" strokeType="INSIDE" width="233.0" />
       <Text fx:id="txtConnexion" layoutX="272.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connexion" underline="true" />
-      <Button layoutX="340.0" layoutY="227.0" mnemonicParsing="false" text="Connexion" />
+      <Button layoutX="329.0" layoutY="227.0" mnemonicParsing="false" onAction="#Connexion" text="Se connecter" />
       <Text layoutX="190.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identifiant" />
       <Text layoutX="190.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="42.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />

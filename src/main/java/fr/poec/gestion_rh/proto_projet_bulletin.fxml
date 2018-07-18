@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.poec.gestion_rh.MainController">
    <children>
       <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
          <children>
@@ -23,55 +23,21 @@
             </Text>
             <MenuButton layoutX="14.0" layoutY="9.0" mnemonicParsing="false" text="Menu">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Gestion du personnel" />
-                  <MenuItem mnemonicParsing="false" text="Editer les heures de travail" />
-                  <MenuItem mnemonicParsing="false" text="Editer un bulletin de salaire" />
-                  <MenuItem mnemonicParsing="false" text="Conventions" />
-                  <MenuItem mnemonicParsing="false" text="Paramètres" />
+                  <MenuItem mnemonicParsing="false" onAction="#Personnel" text="Gestion du personnel" />
+                  <MenuItem mnemonicParsing="false" onAction="#Heures" text="Editer les heures de travail" />
+                  <MenuItem mnemonicParsing="false" onAction="#Bulletin" text="Editer un bulletin de salaire" />
+                  <MenuItem mnemonicParsing="false" onAction="#Conventions" text="Conventions" />
+                  <MenuItem mnemonicParsing="false" onAction="#Parametres" text="Paramètres" />
                </items>
             </MenuButton>
-            <Button layoutX="488.0" layoutY="9.0" mnemonicParsing="false" text="Se déconnecter" />
+            <Button layoutX="488.0" layoutY="9.0" mnemonicParsing="false" onAction="#Deconnexion" text="Se déconnecter" />
             <Button layoutX="547.0" layoutY="225.0" mnemonicParsing="false" text="Créer" />
             <ScrollPane layoutX="14.0" layoutY="95.0" prefHeight="123.0" prefWidth="578.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="42.0" layoutX="14.0" layoutY="47.0" stroke="BLACK" strokeType="INSIDE" width="578.0" />
             <Button layoutX="262.0" layoutY="56.0" mnemonicParsing="false" text="Rechercher" />
             <Text layoutX="21.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Période du :" />
-            <ComboBox layoutX="90.0" layoutY="56.0" promptText="Mois">
-            	<items>
-            		<FXCollections fx:factory="observableArrayList">
-        				<Période mounth="Janvier"/>
-        				<Période mounth="Février"/>
-        				<Période mounth="Mars"/>
-        				<Période mounth="Avril"/>
-        				<Période mounth="Mai"/>
-        				<Période mounth="Juin"/>
-        				<Période mounth="Juillet"/>
-        				<Période mounth="Août"/>
-        				<Période mounth="Septembre"/>
-        				<Période mounth="Octobre"/>
-        				<Période mounth="Novembre"/>
-        				<Période mounth="Décembre"/>
-      				</FXCollections>
-            	</items>
-            </ComboBox> 	
-            <ComboBox layoutX="164.0" layoutY="56.0" promptText="Année">
-            	<items>
-            		<FXCollections fx:factory="observableArrayList">
-        				<Période year="2018"/>
-        				<Période year="2019"/>
-        				<Période year="2020"/>
-        				<Période year="2021"/>
-        				<Période year="2022"/>
-        				<Période year="2023"/>
-        				<Période year="2024"/>
-        				<Période year="2025"/>
-        				<Période year="2026"/>
-        				<Période year="2027"/>
-        				<Période year="2028"/>
-        				<Période year="2029"/>
-      				</FXCollections>
-            	</items>
-            </ComboBox>
+            <ComboBox layoutX="90.0" layoutY="56.0" promptText="Mois" />
+            <ComboBox layoutX="164.0" layoutY="56.0" promptText="Année" />
          </children>
       </Pane>
    </children>
