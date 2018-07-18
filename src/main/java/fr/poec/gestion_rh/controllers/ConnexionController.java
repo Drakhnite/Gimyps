@@ -1,4 +1,4 @@
-package fr.poec.gestion_rh;
+package fr.poec.gestion_rh.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -10,7 +10,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class MainController {
+public class ConnexionController {
+
 	@FXML
 	private Text txtConnexion;
 	

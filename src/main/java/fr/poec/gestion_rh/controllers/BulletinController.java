@@ -1,4 +1,4 @@
-package fr.poec.gestion_rh;
+package fr.poec.gestion_rh.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
