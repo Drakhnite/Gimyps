@@ -15,7 +15,7 @@ public class ConnectionToBdd {
         dataSource.setServerName("127.0.0.1");
         dataSource.setUser("root");
         dataSource.setPassword("");
-        dataSource.setDatabaseName("Gimpyps");
+        dataSource.setDatabaseName("gimyps");
 
         // Create the connection to our database.
         try {

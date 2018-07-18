@@ -2,7 +2,8 @@ package fr.poec.gestion_rh;
 
 import java.io.IOException;
 
-import fr.poec.gestion_rh.payslip.bulletinXls;
+import fr.poec.gestion_rh.table.Login;
+import fr.poec.gestion_rh.table.controler.Controler_Login;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -24,6 +25,14 @@ public class Main extends Application {
 	}
 
 	public static void main(String[] args) throws IOException {
+		
+		Controler_Login loginC = new Controler_Login();
+		
+		System.out.println("coucou");
+		for (Login login : loginC.getDataFromTable()) {
+			System.out.println(login.getUser());
+		}
+		
 		launch(args);
 	}
 }

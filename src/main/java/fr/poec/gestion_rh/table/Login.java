@@ -7,6 +7,15 @@ public class Login {
 	private String role;
 	private String user;
 	private String password;
+//	private String[] column = new String[] {"id_employee","role","login","MdP"};	
+//
+//	public String[] getColumn() {
+//		return column;
+//	}
+//
+//	public void setColumn(String[] column) {
+//		this.column = column;
+//	}
 
 	public int getId() {
 		return id;
