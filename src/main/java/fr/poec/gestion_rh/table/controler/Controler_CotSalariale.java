@@ -12,6 +12,18 @@ import fr.poec.gestion_rh.table.CotSalariale;
 
 public class Controler_CotSalariale {
 
+	public void createTable() {
+
+		try (Connection conn = ConnectionToBdd.createConnection(); Statement statement = conn.createStatement()) {
+			statement.executeUpdate(
+					"create table cotSalariale(id bigint unsigned auto_increment primary key not null unique," + "dateDebut date," + "dateFin date," + "SSMaladie float," + "CompInval float," + "CompSante float," + "AccMadPro float," + 
+			"RetSecuPlaf float," + "RetSecuNon float," + "CompTr1 float," + "CompTr2 float," + "FamSS float," + "AssuChom float," + "ForfaitSoc float," + "AutresContr float," + "CotiConvColl float," + "CSGNonImpo float," + "CGS_CRDS float)");
+			statement.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public List<CotSalariale> getDataFromTable() {
 		List<CotSalariale> cotsalariales = new ArrayList<CotSalariale>();
 		try (Connection conn = ConnectionToBdd.createConnection()) {
