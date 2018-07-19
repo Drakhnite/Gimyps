@@ -25,7 +25,7 @@ public class ConnexionController {
 		if(txtUserName.getText().equals("user") && txtPassword.getText().equals("password")) {
 			txtConnexion.setText("Connexion réussie");
 			Stage primarystage = new Stage();
-			Parent root = FXMLLoader.load(getClass().getResource("/gestion_rh/proto_projet_page_accueil.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("/gestion_rh/proto_projet_connexion.fxml"));
 			Scene scene = new Scene(root,400,400);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primarystage.setScene(scene);
