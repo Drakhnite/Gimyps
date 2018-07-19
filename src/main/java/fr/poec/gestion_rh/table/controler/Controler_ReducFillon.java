@@ -12,6 +12,18 @@ import fr.poec.gestion_rh.table.ReducFillon;
 
 public class Controler_ReducFillon {
 
+	public void createTable() {
+
+		try (Connection conn = ConnectionToBdd.createConnection(); Statement statement = conn.createStatement()) {
+			statement.executeUpdate(
+					"create table reducfillon(id bigint unsigned auto_increment primary key not null unique," + "TselonFnal float," + 
+					"C float," + "LimiteSmic float," + "dateDebut date," + "dateFin date)");
+			statement.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public List<ReducFillon> getDataFromTable() {
 		List<ReducFillon> reducfillons = new ArrayList<ReducFillon>();
 		try (Connection conn = ConnectionToBdd.createConnection()) {

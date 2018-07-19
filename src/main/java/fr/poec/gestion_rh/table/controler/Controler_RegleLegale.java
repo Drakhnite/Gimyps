@@ -12,6 +12,20 @@ import fr.poec.gestion_rh.table.RegleLegale;
 
 public class Controler_RegleLegale {
 
+	public void createTable() {
+
+		try (Connection conn = ConnectionToBdd.createConnection(); Statement statement = conn.createStatement()) {
+			statement.executeUpdate(
+					"create table reglesLegales(id bigint unsigned auto_increment primary key," + "dateDebut date," + "dateFin date," + 
+					"tauxHeuresSup1 float," + "tauxHeuresSup2 float," + "baseHebdo int," + "plafondSecu float," + "baseMensuelle float," + 
+					"salaireMensuel float," + "tauxHoraire float," + "smicHoraire float," + "tauxTransport float," + "tauxCotisAccTravail float," + 
+					"partFormation float," + "taxeApprentissage float," + "effectif int)");
+			statement.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public List<RegleLegale> getDataFromTable() {
 		List<RegleLegale> reglelegales = new ArrayList<RegleLegale>();
 		try (Connection conn = ConnectionToBdd.createConnection()) {

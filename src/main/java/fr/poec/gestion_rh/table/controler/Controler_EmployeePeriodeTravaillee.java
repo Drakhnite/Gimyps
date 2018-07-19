@@ -12,6 +12,18 @@ import fr.poec.gestion_rh.table.EmployeePeriodeTravaillee;
 
 public class Controler_EmployeePeriodeTravaillee {
 
+	public void createTable() {
+
+		try (Connection conn = ConnectionToBdd.createConnection(); Statement statement = conn.createStatement()) {
+			statement.executeUpdate(
+					"create table employePeriodeTravaillee(id bigint unsigned auto_increment primary key," + "id_employe bigint unsigned not null," + 
+					"id_periodeTravaillee bigint unsigned not null," + "nbHeures float," + "constraint fk_ept_employe foreign key (id_employe) references employe(id)," + "constraint fk_ept_pt foreign key (id_periodeTravaillee) references periodeTravaillee(id))");
+			statement.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public List<EmployeePeriodeTravaillee> getDataFromTable() {
 		List<EmployeePeriodeTravaillee> employeeperiodetravaillees = new ArrayList<EmployeePeriodeTravaillee>();
 		try (Connection conn = ConnectionToBdd.createConnection()) {

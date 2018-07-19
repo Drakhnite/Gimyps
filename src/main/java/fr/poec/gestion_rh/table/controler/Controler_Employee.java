@@ -12,6 +12,18 @@ import fr.poec.gestion_rh.table.Employee;
 
 public class Controler_Employee {
 
+	public void createTable() {
+
+		try (Connection conn = ConnectionToBdd.createConnection(); Statement statement = conn.createStatement()) {
+			statement.executeUpdate(
+					"create table employe(id bigint unsigned auto_increment primary key not null unique," + "nom varchar(50)," + "prenom varchar(50)," + 
+					"dateEntree date," + "dateSortie date," + "typeContrat varchar(3)," + "salaireHoraire float," + "dureeHebdomadaire float," + "bulletinEmail boolean)");
+			statement.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public List<Employee> getDataFromTable() {
 		List<Employee> employees = new ArrayList<Employee>();
 		try (Connection conn = ConnectionToBdd.createConnection()) {

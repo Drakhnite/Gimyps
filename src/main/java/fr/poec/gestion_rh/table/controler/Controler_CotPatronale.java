@@ -12,6 +12,18 @@ import fr.poec.gestion_rh.table.CotPatronale;
 
 public class Controler_CotPatronale {
 
+	public void createTable() {
+
+		try (Connection conn = ConnectionToBdd.createConnection(); Statement statement = conn.createStatement()) {
+			statement.executeUpdate(
+					"create table cotPatronale(id bigint unsigned auto_increment primary key not null unique," + "dateDebut date," + "dateFin date," + "SSMaladie float," + "CompInval float," + "CompSante float," + "AccMadPro float," + 
+			"RetSecuPlaf float," + "RetSecuNon float," + "CompTr1 float," + "CompTr2 float," + "FamSS float," + "AssuChom float," + "ForfaitSoc float," + "AutresContr float," + "CotiConvColl float," + "CSGNonImpo float," + "CGS_CRDS float)");
+			statement.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public List<CotPatronale> getDataFromTable() {
 		List<CotPatronale> cotpatronales = new ArrayList<CotPatronale>();
 		try (Connection conn = ConnectionToBdd.createConnection()) {

@@ -12,6 +12,18 @@ import fr.poec.gestion_rh.table.PeriodeTravaillee;
 
 public class Controler_PeriodeTravaillee {
 
+	public void createTable() {
+
+		try (Connection conn = ConnectionToBdd.createConnection(); Statement statement = conn.createStatement()) {
+			statement.executeUpdate(
+					"create table periodeTravaillee(id bigint unsigned auto_increment primary key not null unique," + 
+					"date date," + "nbHeures float," + "absence boolean)");
+			statement.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public List<PeriodeTravaillee> getDataFromTable() {
 		List<PeriodeTravaillee> periodetravaillees = new ArrayList<PeriodeTravaillee>();
 		try (Connection conn = ConnectionToBdd.createConnection()) {

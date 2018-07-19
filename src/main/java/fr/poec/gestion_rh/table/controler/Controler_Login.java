@@ -14,8 +14,7 @@ import fr.poec.gestion_rh.table.Login;
 
 public class Controler_Login {
 	Scanner sc = new Scanner(System.in);
-	private List<Object> list = new ArrayList<Object>();
-
+	
 	public void createTable() {
 
 		try (Connection conn = ConnectionToBdd.createConnection(); Statement statement = conn.createStatement()) {
