@@ -10,7 +10,7 @@ public class ConventionController {
 
 	public void Bulletin (ActionEvent event) throws Exception {
 		Stage primarystage = new Stage();
-		Parent root = FXMLLoader.load(getClass().getResource("/gestion_rh/proto_projet_bulletin.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("fxml/proto_projet_bulletin.fxml"));
 		Scene scene = new Scene(root,400,400);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		primarystage.setScene(scene);
@@ -19,7 +19,7 @@ public class ConventionController {
 
 public void Personnel (ActionEvent event) throws Exception {
 	Stage primarystage = new Stage();
-	Parent root = FXMLLoader.load(getClass().getResource("/gestion_rh/proto_projet_gestion_personnel.fxml"));
+	Parent root = FXMLLoader.load(getClass().getResource("fxml/proto_projet_gestion_personnel.fxml"));
 	Scene scene = new Scene(root,400,400);
 	scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 	primarystage.setScene(scene);
@@ -28,7 +28,7 @@ public void Personnel (ActionEvent event) throws Exception {
 
 public void Conventions (ActionEvent event) throws Exception {
 	Stage primarystage = new Stage();
-	Parent root = FXMLLoader.load(getClass().getResource("/gestion_rh/proto_projet_conventions.fxml"));
+	Parent root = FXMLLoader.load(getClass().getResource("fxml/proto_projet_conventions.fxml"));
 	Scene scene = new Scene(root,400,400);
 	scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 	primarystage.setScene(scene);
@@ -37,7 +37,7 @@ public void Conventions (ActionEvent event) throws Exception {
 
 public void Heures (ActionEvent event) throws Exception {
 	Stage primarystage = new Stage();
-	Parent root = FXMLLoader.load(getClass().getResource("/gestion_rh/proto_projet_heures.fxml"));
+	Parent root = FXMLLoader.load(getClass().getResource("fxml/proto_projet_heures.fxml"));
 	Scene scene = new Scene(root,400,400);
 	scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 	primarystage.setScene(scene);
@@ -46,7 +46,7 @@ public void Heures (ActionEvent event) throws Exception {
 
 public void Parametres (ActionEvent event) throws Exception {
 	Stage primarystage = new Stage();
-	Parent root = FXMLLoader.load(getClass().getResource("/gestion_rh/proto_projet_paramètres.fxml"));
+	Parent root = FXMLLoader.load(getClass().getResource("fxml/proto_projet_paramètres.fxml"));
 	Scene scene = new Scene(root,400,400);
 	scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 	primarystage.setScene(scene);
@@ -55,7 +55,7 @@ public void Parametres (ActionEvent event) throws Exception {
 
 public void Accueil (ActionEvent event) throws Exception {
 	Stage primarystage = new Stage();
-	Parent root = FXMLLoader.load(getClass().getResource("/gestion_rh/proto_projet_page_accueil.fxml"));
+	Parent root = FXMLLoader.load(getClass().getResource("fxml/proto_projet_page_accueil.fxml"));
 	Scene scene = new Scene(root,400,400);
 	scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 	primarystage.setScene(scene);
@@ -64,7 +64,7 @@ public void Accueil (ActionEvent event) throws Exception {
 
 public void CotisationsPatro (ActionEvent event) throws Exception {
 	Stage primarystage = new Stage();
-	Parent root = FXMLLoader.load(getClass().getResource("/gestion_rh/proto_projet_cotisationsPatro.fxml"));
+	Parent root = FXMLLoader.load(getClass().getResource("fxml/proto_projet_cotisationsPatro.fxml"));
 	Scene scene = new Scene(root,400,400);
 	scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 	primarystage.setScene(scene);
@@ -73,7 +73,7 @@ public void CotisationsPatro (ActionEvent event) throws Exception {
 
 public void CotisationsSal (ActionEvent event) throws Exception {
 	Stage primarystage = new Stage();
-	Parent root = FXMLLoader.load(getClass().getResource("/gestion_rh/proto_projet_cotisationsSal.fxml"));
+	Parent root = FXMLLoader.load(getClass().getResource("fxml/proto_projet_cotisationsSal.fxml"));
 	Scene scene = new Scene(root,400,400);
 	scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 	primarystage.setScene(scene);
@@ -83,7 +83,7 @@ public void CotisationsSal (ActionEvent event) throws Exception {
 // Fonction de déconnexion à modifier
 public void Deconnexion (ActionEvent event) throws Exception {
 	Stage primarystage = new Stage();
-	Parent root = FXMLLoader.load(getClass().getResource("/gestion_rh/proto_projet_connexion.fxml"));
+	Parent root = FXMLLoader.load(getClass().getResource("fxml/proto_projet_connexion.fxml"));
 	Scene scene = new Scene(root,400,400);
 	scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 	primarystage.setScene(scene);
