@@ -1,6 +1,7 @@
 package fr.poec.gestion_rh;
 
 import java.io.IOException;
+import java.net.URL;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -48,17 +49,33 @@ public class MainApp extends Application {
 	 */
 	public void showConnexion() {
 		try {
-			// Load person overview.
-			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(MainApp.class.getResource("\\fxml\\proto_projet_connexion.fxml"));
-			AnchorPane connexion = (AnchorPane) loader.load();
-
-			// Set connexion into the center of root layout.
-			root.setCenter(connexion);
-		} catch (IOException e) {
-			e.printStackTrace();
+			// Localisation du fichier FXML.
+			final URL url = getClass().getResource("\\fxml\\proto_projet_connexion.fxml");
+			// Création du loader.
+			final FXMLLoader fxmlLoader = new FXMLLoader(url);
+			// Chargement du FXML.
+			final AnchorPane root = (AnchorPane) fxmlLoader.load();
+			// Création de la scène.
+			final Scene scene = new Scene(root);
+			primaryStage.setScene(scene);
+		} catch (IOException ex) {
+			System.err.println("Erreur au chargement: " + ex);
 		}
+		primaryStage.setTitle("GIMYPS");
+		primaryStage.show();
 	}
+	// try {
+	// // Load person overview.
+	// FXMLLoader loader = new FXMLLoader();
+	// loader.setLocation(MainApp.class.getResource("\\fxml\\proto_projet_connexion.fxml"));
+	// AnchorPane connexion = (AnchorPane) loader.load();
+	//
+	// // Set connexion into the center of root layout.
+	// root.setCenter(connexion);
+	// } catch (IOException e) {
+	// e.printStackTrace();
+	// }
+	// }
 
 	/**
 	 * Returns the main stage.

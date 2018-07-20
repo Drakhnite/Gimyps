@@ -16,7 +16,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.poec.gestion_rh.PersonnelController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.poec.gestion_rh.PersonnelController">
    <children>
       <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
          <children>
@@ -26,7 +26,7 @@
                   <Font name="Arial Black" size="18.0" />
                </font>
             </Text>
-            <MenuButton layoutX="14.0" layoutY="9.0" mnemonicParsing="false" text="Menu">
+            <MenuButton layoutX="14.0" layoutY="6.0" mnemonicParsing="false" text="Menu">
                <items>
                   <MenuItem mnemonicParsing="false" onAction="#Personnel" text="Gestion du personnel" />
                   <MenuItem mnemonicParsing="false" onAction="#Heures" text="Editer les heures de travail" />
@@ -35,7 +35,7 @@
                   <MenuItem mnemonicParsing="false" onAction="#Parametres" text="Paramètres" />
                </items>
             </MenuButton>
-            <Button layoutX="488.0" layoutY="9.0" mnemonicParsing="false" onAction="#Deconnexion" text="Se déconnecter" />
+            <Button layoutX="470.0" layoutY="6.0" mnemonicParsing="false" onAction="#Deconnexion" text="Se déconnecter" />
             <ListView editable="true" layoutX="14.0" layoutY="51.0" prefHeight="332.0" prefWidth="276.0" />
             <Button layoutX="164.0" layoutY="62.0" mnemonicParsing="false" onAction="#erEmploye" prefHeight="25.0" prefWidth="110.0" text="Nouveau" />
             <TableView layoutX="24.0" layoutY="62.0" prefHeight="272.0" prefWidth="128.0">
@@ -48,7 +48,7 @@
             </TableView>
             <Button layoutX="164.0" layoutY="97.0" mnemonicParsing="false" onAction="#erEmploye" prefHeight="25.0" prefWidth="110.0" text="Suppression" />
             <Button layoutX="164.0" layoutY="132.0" mnemonicParsing="false" onAction="#erEmploye" prefHeight="25.0" prefWidth="110.0" text="Edition" />
-            <Pane layoutX="300.0" layoutY="51.0" prefHeight="332.0" prefWidth="286.0" visible="false">
+            <Pane layoutX="300.0" layoutY="51.0" prefHeight="332.0" prefWidth="286.0">
                <children>
                   <Text layoutX="5.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edition" textAlignment="CENTER" wrappingWidth="275.99999494850636">
                      <font>
@@ -124,13 +124,13 @@
                         <Font size="14.0" />
                      </font>
                   </Text>
-                  <RadioButton layoutX="131.0" layoutY="283.0" mnemonicParsing="false" selected="true" text="oui" />
-                  <RadioButton layoutX="178.0" layoutY="282.0" mnemonicParsing="false" text="non" />
-                  <Button layoutX="27.0" layoutY="305.0" mnemonicParsing="false" onAction="#erEmploye" prefHeight="25.0" prefWidth="110.0" text="annuler" />
-                  <Button layoutX="150.0" layoutY="305.0" mnemonicParsing="false" onAction="#erEmploye" prefHeight="25.0" prefWidth="110.0" text="valider" />
+                  <RadioButton layoutX="144.0" layoutY="283.0" mnemonicParsing="false" selected="true" text="oui" />
+                  <RadioButton layoutX="205.0" layoutY="282.0" mnemonicParsing="false" text="non" />
+                  <Button layoutX="27.0" layoutY="310.0" mnemonicParsing="false" onAction="#erEmploye" prefHeight="25.0" prefWidth="110.0" text="annuler" />
+                  <Button layoutX="150.0" layoutY="310.0" mnemonicParsing="false" onAction="#erEmploye" prefHeight="25.0" prefWidth="110.0" text="valider" />
                </children>
             </Pane>
-            <Pane layoutX="300.0" layoutY="51.0" prefHeight="332.0" prefWidth="286.0">
+            <Pane layoutX="300.0" layoutY="51.0" prefHeight="332.0" prefWidth="286.0" visible="false">
                <children>
                   <Text layoutX="5.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nouveau" textAlignment="CENTER" wrappingWidth="275.99999494850636">
                      <font>
@@ -206,10 +206,10 @@
                         <Font size="14.0" />
                      </font>
                   </Text>
-                  <RadioButton layoutX="131.0" layoutY="283.0" mnemonicParsing="false" selected="true" text="oui" />
-                  <RadioButton layoutX="178.0" layoutY="282.0" mnemonicParsing="false" text="non" />
-                  <Button layoutX="27.0" layoutY="305.0" mnemonicParsing="false" onAction="#erEmploye" prefHeight="25.0" prefWidth="110.0" text="annuler" />
-                  <Button layoutX="150.0" layoutY="305.0" mnemonicParsing="false" onAction="#erEmploye" prefHeight="25.0" prefWidth="110.0" text="valider" />
+                  <RadioButton layoutX="144.0" layoutY="283.0" mnemonicParsing="false" selected="true" text="oui" />
+                  <RadioButton layoutX="205.0" layoutY="282.0" mnemonicParsing="false" text="non" />
+                  <Button layoutX="27.0" layoutY="310.0" mnemonicParsing="false" onAction="#erEmploye" prefHeight="25.0" prefWidth="110.0" text="annuler" />
+                  <Button layoutX="150.0" layoutY="310.0" mnemonicParsing="false" onAction="#erEmploye" prefHeight="25.0" prefWidth="110.0" text="valider" />
                </children>
             </Pane>
          </children>

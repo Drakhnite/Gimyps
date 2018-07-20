@@ -17,7 +17,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.poec.gestion_rh.BulletinController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.poec.gestion_rh.BulletinController">
    <children>
       <GridPane gridLinesVisible="true" layoutX="-42.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
@@ -56,7 +56,7 @@
                               <Font name="Arial Black" size="18.0" />
                            </font>
                         </Text>
-                        <MenuButton layoutX="14.0" layoutY="9.0" mnemonicParsing="false" text="Menu">
+                        <MenuButton layoutX="14.0" layoutY="6.0" mnemonicParsing="false" text="Menu">
                            <items>
                               <MenuItem mnemonicParsing="false" onAction="#Personnel" text="Gestion du personnel" />
                               <MenuItem mnemonicParsing="false" onAction="#Heures" text="Editer les heures de travail" />
@@ -65,13 +65,13 @@
                               <MenuItem mnemonicParsing="false" onAction="#Parametres" text="Paramètres" />
                            </items>
                         </MenuButton>
-                        <Button layoutX="488.0" layoutY="9.0" mnemonicParsing="false" onAction="#Deconnexion" text="Se déconnecter" />
-                        <Button layoutX="509.0" layoutY="55.0" mnemonicParsing="false" text="Créer" />
-                        <Button layoutX="422.0" layoutY="55.0" mnemonicParsing="false" text="Rechercher" />
-                        <Text layoutX="22.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Période du :" />
-                        <ComboBox layoutX="91.0" layoutY="55.0" promptText="Mois" />
-                        <ComboBox layoutX="165.0" layoutY="55.0" promptText="Année" />
-                        <TextField layoutX="250.0" layoutY="55.0" prefHeight="25.0" prefWidth="158.0" />
+                        <Button layoutX="470.0" layoutY="6.0" mnemonicParsing="false" onAction="#Deconnexion" text="Se déconnecter" />
+                        <Button layoutX="530.0" layoutY="52.0" mnemonicParsing="false" text="Créer" />
+                        <Button layoutX="433.0" layoutY="52.0" mnemonicParsing="false" text="Rechercher" />
+                        <Text layoutX="22.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Période" />
+                        <ComboBox layoutX="77.0" layoutY="53.0" promptText="Mois" />
+                        <ComboBox layoutX="165.0" layoutY="53.0" promptText="Année" />
+                        <TextField layoutX="268.0" layoutY="52.0" prefHeight="25.0" prefWidth="158.0" />
                      </children>
                   </Pane>
                </content>

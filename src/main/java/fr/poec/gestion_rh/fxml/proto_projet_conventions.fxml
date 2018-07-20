@@ -14,12 +14,12 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.poec.gestion_rh.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.poec.gestion_rh.MainController">
    <children>
       <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="42.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
-            <MenuButton layoutX="14.0" layoutY="9.0" mnemonicParsing="false" text="Menu">
+            <MenuButton layoutX="14.0" layoutY="6.0" mnemonicParsing="false" text="Menu">
                <items>
                   <MenuItem mnemonicParsing="false" onAction="#Personnel" text="Gestion du personnel" />
                   <MenuItem mnemonicParsing="false" onAction="#Heures" text="Editer les heures de travail" />
@@ -28,10 +28,10 @@
                   <MenuItem mnemonicParsing="false" onAction="#Parametres" text="Paramètres" />
                </items>
             </MenuButton>
-            <Button layoutX="488.0" layoutY="9.0" mnemonicParsing="false" onAction="#Deconnexion" text="Se déconnecter" />
-            <Button layoutX="394.0" layoutY="353.0" mnemonicParsing="false" text="Créer" />
-            <Button layoutX="446.0" layoutY="353.0" mnemonicParsing="false" text="Modifier" />
-            <Button layoutX="514.0" layoutY="353.0" mnemonicParsing="false" text="Supprimer" />
+            <Button layoutX="470.0" layoutY="6.0" mnemonicParsing="false" onAction="#Deconnexion" text="Se déconnecter" />
+            <Button layoutX="360.0" layoutY="353.0" mnemonicParsing="false" text="Créer" />
+            <Button layoutX="420.0" layoutY="353.0" mnemonicParsing="false" text="Modifier" />
+            <Button layoutX="500.0" layoutY="353.0" mnemonicParsing="false" text="Supprimer" />
             <Text layoutX="200.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conventions" textAlignment="CENTER" underline="true" wrappingWidth="187.92383188009262">
                <font>
                   <Font name="Arial Black" size="18.0" />

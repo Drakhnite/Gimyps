@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="AnchorPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.poec.gestion_rh.MainController">
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.poec.gestion_rh.fxml.AccueilController">
    <children>
       <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
          <children>
@@ -19,7 +19,7 @@
                   <Font name="Arial Black" size="18.0" />
                </font>
             </Text>
-            <MenuButton layoutX="14.0" layoutY="9.0" mnemonicParsing="false" text="Menu">
+            <MenuButton layoutX="14.0" layoutY="6.0" mnemonicParsing="false" text="Menu">
                <items>
                   <MenuItem mnemonicParsing="false" onAction="#Personnel" text="Gestion du personnel" />
                   <MenuItem mnemonicParsing="false" onAction="#Heures" text="Editer les heures de travail" />
@@ -28,7 +28,7 @@
                   <MenuItem mnemonicParsing="false" onAction="#Parametres" text="Paramètres" />
                </items>
             </MenuButton>
-            <Button layoutX="488.0" layoutY="9.0" mnemonicParsing="false" text="Se déconnecter" />
+            <Button layoutX="470.0" layoutY="6.0" mnemonicParsing="false" text="Se déconnecter" />
          </children>
       </Pane>
    </children>
