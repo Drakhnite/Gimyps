@@ -14,9 +14,9 @@
       <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="42.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
-            <Text layoutX="273.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accueil" underline="true" wrappingWidth="53.92383188009262">
+            <Text layoutX="229.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accueil" textAlignment="CENTER" underline="true" wrappingWidth="141.12384408712387">
                <font>
-                  <Font name="Arial Black" size="12.0" />
+                  <Font name="Arial Black" size="18.0" />
                </font>
             </Text>
             <MenuButton layoutX="14.0" layoutY="9.0" mnemonicParsing="false" text="Menu">
