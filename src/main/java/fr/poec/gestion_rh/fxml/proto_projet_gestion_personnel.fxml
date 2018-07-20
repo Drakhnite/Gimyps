@@ -48,6 +48,88 @@
             </TableView>
             <Button layoutX="164.0" layoutY="97.0" mnemonicParsing="false" onAction="#erEmploye" prefHeight="25.0" prefWidth="110.0" text="Suppression" />
             <Button layoutX="164.0" layoutY="132.0" mnemonicParsing="false" onAction="#erEmploye" prefHeight="25.0" prefWidth="110.0" text="Edition" />
+            <Pane layoutX="300.0" layoutY="51.0" prefHeight="332.0" prefWidth="286.0" visible="false">
+               <children>
+                  <Text layoutX="5.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edition" textAlignment="CENTER" wrappingWidth="275.99999494850636">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField layoutX="73.0" layoutY="35.0" prefHeight="25.0" prefWidth="199.0" />
+                  <Text layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" wrappingWidth="56.1675980091095">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField layoutX="73.0" layoutY="70.0" prefHeight="25.0" prefWidth="199.0" />
+                  <Text layoutX="14.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom" wrappingWidth="56.16759806871414">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <DatePicker layoutX="73.0" layoutY="105.0" prefHeight="25.0" prefWidth="199.0" />
+                  <Text layoutX="14.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arrivée" wrappingWidth="56.16759806871414">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <DatePicker layoutX="73.0" layoutY="140.0" prefHeight="25.0" prefWidth="199.0" />
+                  <Text layoutX="14.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Départ" wrappingWidth="56.16759806871414">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <ComboBox layoutX="73.0" layoutY="175.0" prefHeight="25.0" prefWidth="199.0" visibleRowCount="2" />
+                  <Text layoutX="14.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contrat" wrappingWidth="56.16759806871414">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField layoutX="104.0" layoutY="209.0" prefHeight="25.0" prefWidth="33.0" promptText="9" />
+                  <TextField layoutX="160.0" layoutY="209.0" prefHeight="25.0" prefWidth="33.0" promptText="57" />
+                  <Text layoutX="14.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taux Horaire" wrappingWidth="88.16759806871414">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="143.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="," textAlignment="CENTER" wrappingWidth="15.367610275745392">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="197.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="€" textAlignment="CENTER" wrappingWidth="15.367610275745392">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Durée Hebdomadaire" wrappingWidth="144.92383003234863">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField layoutX="158.0" layoutY="244.0" prefHeight="25.0" prefWidth="33.0" promptText="7" />
+                  <TextField layoutX="214.0" layoutY="244.0" prefHeight="25.0" prefWidth="33.0" promptText="50" />
+                  <Text layoutX="197.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="," textAlignment="CENTER" wrappingWidth="15.367610275745392">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="251.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="h" textAlignment="CENTER" wrappingWidth="15.367610275745392">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dématérialisation" wrappingWidth="144.92383003234863">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <RadioButton layoutX="131.0" layoutY="283.0" mnemonicParsing="false" selected="true" text="oui" />
+                  <RadioButton layoutX="178.0" layoutY="282.0" mnemonicParsing="false" text="non" />
+                  <Button layoutX="27.0" layoutY="305.0" mnemonicParsing="false" onAction="#erEmploye" prefHeight="25.0" prefWidth="110.0" text="annuler" />
+                  <Button layoutX="150.0" layoutY="305.0" mnemonicParsing="false" onAction="#erEmploye" prefHeight="25.0" prefWidth="110.0" text="valider" />
+               </children>
+            </Pane>
             <Pane layoutX="300.0" layoutY="51.0" prefHeight="332.0" prefWidth="286.0">
                <children>
                   <Text layoutX="5.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nouveau" textAlignment="CENTER" wrappingWidth="275.99999494850636">

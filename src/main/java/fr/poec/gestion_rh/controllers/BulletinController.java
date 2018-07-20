@@ -11,7 +11,7 @@ public class BulletinController {
 	
 	public void Bulletin (ActionEvent event) throws Exception {
 		Stage primarystage = new Stage();
-		Parent root = FXMLLoader.load(getClass().getResource("/gestion_rh/proto_projet_bulletin.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("/fxml/proto_projet_bulletin.fxml"));
 		Scene scene = new Scene(root,400,400);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		primarystage.setScene(scene);
@@ -20,7 +20,7 @@ public class BulletinController {
 
 public void Personnel (ActionEvent event) throws Exception {
 	Stage primarystage = new Stage();
-	Parent root = FXMLLoader.load(getClass().getResource("/gestion_rh/proto_projet_gestion_personnel.fxml"));
+	Parent root = FXMLLoader.load(getClass().getResource("/fxml/proto_projet_gestion_personnel.fxml"));
 	Scene scene = new Scene(root,400,400);
 	scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 	primarystage.setScene(scene);
