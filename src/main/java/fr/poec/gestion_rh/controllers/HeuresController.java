@@ -6,12 +6,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class BulletinController {
+public class HeuresController {
 
-	
 	public void Bulletin (ActionEvent event) throws Exception {
 		Stage primarystage = new Stage();
-		Parent root = FXMLLoader.load(getClass().getResource("/fxml/proto_projet_bulletin.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("fxml/proto_projet_bulletin.fxml"));
 		Scene scene = new Scene(root,400,400);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		primarystage.setScene(scene);
@@ -20,7 +19,7 @@ public class BulletinController {
 
 public void Personnel (ActionEvent event) throws Exception {
 	Stage primarystage = new Stage();
-	Parent root = FXMLLoader.load(getClass().getResource("/fxml/proto_projet_gestion_personnel.fxml"));
+	Parent root = FXMLLoader.load(getClass().getResource("fxml/proto_projet_gestion_personnel.fxml"));
 	Scene scene = new Scene(root,400,400);
 	scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 	primarystage.setScene(scene);
@@ -90,26 +89,5 @@ public void Deconnexion (ActionEvent event) throws Exception {
 	primarystage.setScene(scene);
 	primarystage.show();
 }
-
-// Fonction de création de bulletin à modifier
-public void Créer (ActionEvent event) throws Exception {
-	Stage primarystage = new Stage();
-	Parent root = null;
-	Scene scene = new Scene(root,400,400);
-	scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-	primarystage.setScene(scene);
-	primarystage.show();
-}
-
-//Fonction de recherche à modifier
-public void Rechercher (ActionEvent event) throws Exception {
-	Stage primarystage = new Stage();
-	Parent root = null;
-	Scene scene = new Scene(root,400,400);
-	scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-	primarystage.setScene(scene);
-	primarystage.show();
-}
-
-
+	
 }

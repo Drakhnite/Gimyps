@@ -2,7 +2,6 @@ package fr.poec.gestion_rh.bdd;
 
 import java.sql.Connection;
 import java.sql.SQLException;
-
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 
 public class ConnectionToBdd {
